@@ -26,7 +26,7 @@ namespace OpAsincronas.Controllers
         {
             var tarea1 = TareaPesada.DiezSegundos();
             var tarea2 = TareaPesada.CincoSegundos();
-            await Task.WhenAll(tarea1, tarea2);
+            await Task.WhenAll(tarea1, tarea2); 
             return Content("Retardo total de 10 Segundos");
         }
     }
