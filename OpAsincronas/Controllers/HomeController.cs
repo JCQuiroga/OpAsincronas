@@ -22,7 +22,6 @@ namespace OpAsincronas.Controllers
             return Content("Retardo total de 15 Segundos");
         }
 
-
         public async Task<ActionResult> AccionesSimultaneas()
         {
             var tarea1 = TareaPesada.DiezSegundos();
